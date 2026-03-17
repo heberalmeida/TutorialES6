@@ -16,25 +16,20 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: vue-app
     steps:
       - uses: actions/checkout@v4
 
       - uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '22.15.0'
 
       - run: npm install
-        working-directory: vue-app
 
       - run: npm run build
-        working-directory: vue-app
 
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: vue-app/dist
+          path: dist
 
   deploy:
     environment:

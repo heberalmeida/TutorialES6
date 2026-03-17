@@ -1,0 +1,22 @@
+{
+  "name": "es6-tutorial",
+  "private": true,
+  "repository": "https://github.com/heberalmeida/TutorialES6.git",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "marked": "^17.0.4",
+    "vue": "^3.5.30",
+    "vue-i18n": "^10.0.8",
+    "vue-router": "^4.6.4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.5",
+    "vite": "^8.0.0"
+  }
+}
